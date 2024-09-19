@@ -1,12 +1,13 @@
-.side-drawer-container, .closed-drawer {
+.side-drawer-container,
+.closed-drawer {
     position: absolute;
     width: 230px;
     height: 90vh;
     border-right: 2px dashed #dddddd;
-}
 
-.closed-drawer {
-    width: 15px !important;
+    &.closed-drawer {
+        width: 15px !important;
+    }
 }
 
 .dashboard-title {
@@ -16,13 +17,13 @@
     background-color: #011dc51f;
     display: flex;
     align-items: center;
-    margin: 22px -2px 22px 0px;
+    margin: 22px -2px 22px 0;
     padding-left: 14px;
-}
 
-.dashboard {
-    padding-left: 12px;
-    font-size: 18px;
+    .dashboard {
+        padding-left: 12px;
+        font-size: 18px;
+    }
 }
 
 .arrow-icon {
@@ -36,7 +37,8 @@
     width: 15px !important;
 }
 
-.icon-container, .closed-icon-container {
+.icon-container,
+.closed-icon-container {
     border-radius: 50%;
     border: 2px dashed #dddddd;
     width: 25px;
@@ -46,8 +48,8 @@
     float: right;
     background-color: #fff;
     right: -14px;
-}
 
-.closed-icon-container {
-    top: 42% !important
+    &.closed-icon-container {
+        top: 42% !important;
+    }
 }

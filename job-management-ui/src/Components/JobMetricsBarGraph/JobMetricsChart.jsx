@@ -33,7 +33,7 @@ const JobMetricsChart = () => {
             data: jobPostingData.map(job => job.metrics[categoryIndex].value),
             backgroundColor: ['#6a5dd7', '#5db3f1', '#3ed4c8', '#ff9a6f'][categoryIndex],  // Colors for each metric
             borderWidth: 1,
-            barThickness: 25,
+            barThickness: 10,
         })),
     };
 
@@ -51,31 +51,19 @@ const JobMetricsChart = () => {
                     },
                 },
             },
-            title: {
-                display: true,
-                text: 'Your Job Postings',
-                font: {
-                    size: 18,
-                    weight: 'bold',
-                },
-                padding: {
-                    top: 10,
-                    bottom: 20,
-                },
-            },
         },
         scales: {
             x: {
                 beginAtZero: true,
                 ticks: {
-                    stepSize: 50, // Adjust the step size for the X-axis
+                    stepSize: 10, // Adjust the step size for the X-axis
                 },
             },
             y: {
                 beginAtZero: true,
                 ticks: {
                     font: {
-                        size: 14,
+                        size: 10,
                     },
                 },
             },

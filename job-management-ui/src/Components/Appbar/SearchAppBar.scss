@@ -9,29 +9,29 @@ $primary-color: #3c3c3c;
     align-items: $align-items;
     justify-content: space-between;
     padding: 4px 8px 4px 40px;
-}
 
-.first-heading {
-    opacity: .8;
-}
+    .first-heading {
+        opacity: .8;
+    }
 
-.other-options {
-    display: $display-flex;
-    align-items: $align-items;
-    margin-right: 25px;
-}
+    .other-options {
+        display: $display-flex;
+        align-items: $align-items;
+        margin-right: 25px;
 
-.other-options > svg {
-    color: $primary-color;
-}
+        >svg {
+            color: $primary-color;
+        }
 
-.notification {
-    margin: 0px 30px;
-}
+        .notification {
+            margin: 0 30px;
+        }
 
-.start-search {
-    font-size: 16px;
-    font-family: sans-serif;
-    margin-left: 8px;
-    color: $primary-color;
+        .start-search {
+            font-size: 16px;
+            font-family: sans-serif;
+            margin-left: 8px;
+            color: $primary-color;
+        }
+    }
 }

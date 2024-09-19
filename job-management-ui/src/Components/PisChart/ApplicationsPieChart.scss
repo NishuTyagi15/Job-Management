@@ -1,37 +1,37 @@
 .pie-chart {
     width: 256px !important;
     height: 188px !important;
-}
 
-.pie-chart > svg {
-    width: 76% !important;
-    height: 103% !important;
-    margin: -15px 0px 0px -50px;
-}
+    >svg {
+        width: 76% !important;
+        height: 103% !important;
+        margin: -15px 0 0 -50px;
+    }
 
-.pie-chart > div {
-    width: 178px !important;
-    left: 115px !important;
-    top: 62px !important;
-}
+    >div {
+        width: 178px !important;
+        left: 115px !important;
+        top: 62px !important;
 
-.pie-chart > div > ul {
-    text-align: left !important;
-    margin-left: 24px !important;
-}
+        ul {
+            text-align: left !important;
+            margin-left: 24px !important;
 
-.pie-chart > div > ul > li {
-    margin-bottom: 20px;
-}
+            li {
+                margin-bottom: 20px;
 
-.pie-chart > div > ul > li > svg {
-    margin-right: -15px !important;
-    margin-top: -36px;
-    border-radius: 8px;
-}
+                svg {
+                    margin-right: -15px !important;
+                    margin-top: -36px;
+                    border-radius: 8px;
+                }
 
-.pie-chart > div > ul > li > span {
-    color: #000 !important;
-    font-weight: 500;
-    font-size: 14px;
+                span {
+                    color: #000 !important;
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
