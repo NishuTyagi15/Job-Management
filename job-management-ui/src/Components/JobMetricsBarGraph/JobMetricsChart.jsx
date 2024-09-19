@@ -6,17 +6,17 @@ import { fetchJobPostingDetails } from '../../Utility/Action';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-const JobMetricsChart = ({ jobMetrics }) => {
+const JobMetricsChart = () => {
 
     const [jobPostingData, setJobPostingData] = useState([]);
-    const labels = ['Applied', 'Phone Screen', 'On-site', 'Offer'];
+    const categories = ['Applied', 'Phone Screen', 'On-site', 'Offer'];  // Category labels
 
     const fetchJobPostingData = async () => {
         try {
-          const jobPostingResponse = await fetchJobPostingDetails();
-          setJobPostingData(jobPostingResponse); // Update the result with the response data
+            const jobPostingResponse = await fetchJobPostingDetails();
+            setJobPostingData(jobPostingResponse); // Update the result with the response data
         } catch (e) {
-          console.log('Error fetching quiz data:', e);
+            console.log('Error fetching quiz data:', e);
         }
     }
 
@@ -24,38 +24,60 @@ const JobMetricsChart = ({ jobMetrics }) => {
         fetchJobPostingData();
     }, []);
 
+    const labels = jobPostingData.map(job => job.jobTitle);  // Job titles as labels
+
     const chartData = {
-        labels,
-        datasets: jobPostingData.map((job, index) => ({
-            label: job.jobTitle,
-            data: job.metrics.map(metric => metric.value),
-            backgroundColor: [
-                '#735ce5', // Customize for each job title
-                '#5ad0c9',
-                '#49a1f5'
-            ][index],
+        labels, // Display job titles on Y-axis (horizontal chart)
+        datasets: categories.map((category, categoryIndex) => ({
+            label: category,
+            data: jobPostingData.map(job => job.metrics[categoryIndex].value),
+            backgroundColor: ['#6a5dd7', '#5db3f1', '#3ed4c8', '#ff9a6f'][categoryIndex],  // Colors for each metric
             borderWidth: 1,
+            barThickness: 25,
         })),
     };
 
     const options = {
+        indexAxis: 'y', // Horizontal bar chart
         responsive: true,
+        maintainAspectRatio: false,
         plugins: {
             legend: {
                 position: 'bottom',
+                labels: {
+                    boxWidth: 15,
+                    font: {
+                        size: 12,
+                    },
+                },
             },
             title: {
                 display: true,
                 text: 'Your Job Postings',
+                font: {
+                    size: 18,
+                    weight: 'bold',
+                },
+                padding: {
+                    top: 10,
+                    bottom: 20,
+                },
             },
         },
         scales: {
             x: {
-                stacked: true,
+                beginAtZero: true,
+                ticks: {
+                    stepSize: 50, // Adjust the step size for the X-axis
+                },
             },
             y: {
                 beginAtZero: true,
-                stacked: true,
+                ticks: {
+                    font: {
+                        size: 14,
+                    },
+                },
             },
         },
     };
