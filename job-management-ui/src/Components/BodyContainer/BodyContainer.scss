@@ -5,6 +5,10 @@
     @media only screen and (min-width: 1422px) and (max-width: 1599px) {
         margin-left: 300px;
     }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1422px) {
+        margin-left: 242px;
+    }
 }
 
 .card {
@@ -26,6 +30,10 @@
     @media only screen and (min-width: 1422px) and (max-width: 1599px) {
         width: 70vw;
     }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1422px) {
+        width: 75vw;
+    }
 }
 
 .main-card-job-details {
@@ -39,22 +47,37 @@
         @media only screen and (min-width: 1422px) and (max-width: 1599px) {
             padding: 0px 18px;
         }
+
+        @media only screen and (min-width: 1200px) and (max-width: 1422px) {
+            padding: 0px;
+        }
     }
 
     @media only screen and (min-width: 1422px) and (max-width: 1599px) {
         padding: 19.5px;
+    }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1422px) {
+        padding: 14px;
     }
 }
 
 .job-board-card {
     border-radius: 8px !important;
     border: 1px solid #f7f4f4;
+
+    >.job-board-padding {
+        padding: 14px !important;
+    }
 }
 
 .main-body-container {
     display: flex;
     justify-content: space-around;
     margin-top: 15px;
+    @media only screen and (min-width: 1200px) and (max-width: 1422px) {
+        margin-top: 8px;
+    }
 }
 
 .job-board {
@@ -65,14 +88,14 @@
     @media only screen and (min-width: 1422px) and (max-width: 1599px) {
         width: 282px;
     }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1422px) {
+        width: 270px;
+    }
 }
 
 .job-board-image {
-    width: 310px;
-
-    @media only screen and (min-width: 1422px) and (max-width: 1599px) {
-        width: 252px;
-    }
+    width: -webkit-fill-available;
 }
 
 .title {
@@ -82,17 +105,24 @@
     @media only screen and (min-width: 1422px) and (max-width: 1599px) {
         font-size: 14px !important;
     }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1422px) {
+        font-size: 10px !important;
+    }
 }
 
 .description {
     font-size: 16px !important;
     font-weight: 500 !important;
     color: gray;
-    width: 288px;
+    width: -webkit-fill-available;
 
     @media only screen and (min-width: 1422px) and (max-width: 1599px) {
         font-size: 14px !important;
-        width: 255px;
+    }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1422px) {
+        font-size: 10px !important;
     }
 }
 
@@ -103,6 +133,12 @@
 .heading {
     font-size: 18px;
     margin-bottom: 10px;
+
+    @media only screen and (min-width: 1200px) and (max-width: 1422px) {
+        font-size: 16px;
+        margin-bottom: 8px;
+        margin-top: 18px;
+    }
 }
 
 .desc {
@@ -110,11 +146,18 @@
     width: 370px;
     font-weight: 500;
     color: #5c5c5c;
+    @media only screen and (min-width: 1200px) and (max-width: 1422px) {
+        font-size: 10px;
+    }
 }
 
 .candidate-details-container {
     display: flex;
     margin-top: 100px;
+
+    @media only screen and (min-width: 1200px) and (max-width: 1422px) {
+        margin-top: 80px;
+    }
 }
 
 .icon-Button {
@@ -126,6 +169,11 @@
     @media only screen and (min-width: 1422px) and (max-width: 1599px) {
         width: 40px;
         height: 40px;
+    }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1422px) {
+        width: 30px;
+        height: 30px;
     }
 
     &.people-icon {
@@ -144,6 +192,11 @@
             width: 30px;
             height: 25px;
         }
+
+        @media only screen and (min-width: 1200px) and (max-width: 1422px) {
+            width: 25px;
+            height: 18px;
+        }
     }
 }
 
@@ -159,6 +212,11 @@
         font-size: 30px;
         margin: -10px 40px 18px 18px;
     }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1422px) {
+        font-size: 22px;
+        margin: -8px 36px 14px 14px;
+    }
 }
 
 .total-jobs {
@@ -172,6 +230,11 @@
         font-size: 16px;
         left: 58px;
     }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1422px) {
+        font-size: 12px;
+        left: 45px;
+    }
 }
 
 .latest-candidate {
@@ -183,6 +246,10 @@
 
     @media only screen and (min-width: 1422px) and (max-width: 1599px) {
         font-size: 16px !important;
+    }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1422px) {
+        font-size: 12px !important;
     }
 }
 
@@ -199,11 +266,21 @@
         @media only screen and (min-width: 1422px) and (max-width: 1599px) {
             width: 456px;
         }
+
+        @media only screen and (min-width: 1200px) and (max-width: 1422px) {
+            width: 510px;
+            margin-right: 10px;
+        }
     }
 
     @media only screen and (min-width: 1422px) and (max-width: 1599px) {
         padding: 0;
         margin-right: 46px;
+    }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1422px) {
+        padding: 0;
+        margin-right: 40px;
     }
 }
 
@@ -219,6 +296,11 @@
 
         @media only screen and (min-width: 1422px) and (max-width: 1599px) {
             padding: 8px;
+        }
+
+        @media only screen and (min-width: 1200px) and (max-width: 1422px) {
+            padding: 8px;
+            font-size: 12px;
         }
     }
 

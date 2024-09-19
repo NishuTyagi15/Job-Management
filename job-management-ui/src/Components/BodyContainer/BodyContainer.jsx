@@ -67,7 +67,7 @@ function BodyContainer() {
           </div>
           <div className='job-board'>
             <Card className='job-board-card'>
-              <CardContent>
+              <CardContent className='job-board-padding'>
                 <Typography><img className='job-board-image' alt="private-job-board" src={jobBoardImage} /></Typography>
                 <Typography className='title'>Private Job Board</Typography>
                 <Typography className='description'>Your private job postings will appear here, accessible to the public via a company-specific URL.</Typography>
