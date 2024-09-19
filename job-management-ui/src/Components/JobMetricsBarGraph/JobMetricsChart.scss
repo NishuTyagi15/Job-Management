@@ -1,0 +1,25 @@
+// JobMetricsChart.scss
+.job-metrics-chart {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    .chart-title {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    canvas {
+        max-height: 400px;
+    }
+
+    .chart-legend {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+}

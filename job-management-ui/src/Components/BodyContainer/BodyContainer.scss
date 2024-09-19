@@ -1,25 +1,10 @@
 .body-container {
     padding: 20px;
-    margin-left: 380px;
+    margin-left: 390px;
 }
 
 .card {
     margin-bottom: 20px;
-}
-
-.candidate-table {
-    width: 100%;
-    border-collapse: collapse;
-
-    th, td {
-        padding: 10px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-    }
-
-    th {
-        background-color: #f5f5f5;
-    }
 }
 
 .job-card {
@@ -27,7 +12,7 @@
 }
 
 .body-back {
-    width: 60vw;
+    width: 68vw;
     height: 35vh;
     background-color: #579fdc3d;
     border-radius: 8px;
@@ -36,7 +21,15 @@
 }
 
 .main-card-job-details {
+    border-radius: 8px !important;
+    border: 1px solid #f7f4f4;
     display: flex;
+    padding: 30px 30px 10px 30px;
+}
+
+.job-board-card {
+    border-radius: 8px !important;
+    border: 1px solid #f7f4f4;
 }
 
 .main-body-container {
@@ -48,21 +41,27 @@
 .job-board {
     width: 18vw;
     text-align: left;
+    margin-bottom: -2px;
+}
+
+.job-status {
+    width: 18vw;
 }
 
 .job-board-image {
-    width: 244px;
+    width: 310px;
 }
 
 .title {
-    font-size: 12px !important;
+    font-size: 18px !important;
     font-weight: 600 !important;
 }
 
 .description {
-    font-size: 14px !important;
+    font-size: 16px !important;
     font-weight: 500 !important;
     color: gray;
+    width: 288px;
 }
 
 .main-title {
@@ -84,4 +83,140 @@
 .candidate-details-container {
     display: flex;
     margin-top: 100px;
+}
+
+.icon-Button {
+    background-color: #0202d3 !important;
+    color: #fff !important;
+    width: 50px;
+    height: 50px;
+}
+
+.icon-Button.people-icon {
+    background-color: #a25c238f !important;
+}
+
+.icon-Button.ai-credit-icon {
+    background-color: #0202d399 !important;
+}
+
+.icon-Button > svg {
+    width: 50px;
+    height: 30px;
+}
+
+.jobs-count-main {
+    display: flex;
+}
+
+.count {
+    font-size: 40px;
+    margin: -8px 40px 20px 18px;
+}
+
+.total-jobs {
+    font-size: 18px;
+    font-weight: 700;
+    color: #5c5c5c;
+    position: relative;
+    left: 70px;
+}
+
+.main {
+    margin-bottom: 10px;
+}
+
+.latest-candidate {
+    text-align: left;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    font-family: sans-serif !important;
+    margin-bottom: 8px !important;
+}
+
+.table-chart {
+    margin-top: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 8px 12px 8px 12px;
+    margin-right: 30px;
+}
+
+.table-chart.bar-graph {
+    width: 430px;
+}
+
+.candidate-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+        padding: 18px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f5f5f5;
+    }
+}
+
+@media only screen and (min-width: 1422px) and (max-width: 1599px) {
+    .body-container {
+        margin-left: 300px;
+    }
+    .body-back {
+        width: 70vw;
+    }
+    .main-card-job-details {
+        padding: 19.5px;
+    }
+    .main-card-job-details.pie {
+        padding: 0px 18px;
+    }
+    .icon-Button {
+        width: 40px;
+        height: 40px;
+    }
+    .icon-Button > svg {
+        width: 30px;
+        height: 25px;
+    }
+    .count {
+        font-size: 30px;
+        margin: -10px 40px 18px 18px;
+    }
+    .total-jobs {
+        font-size: 16px;
+        left: 58px;
+    }
+    .pie-chart {
+        height: 182px !important;
+    }
+    .job-board {
+        width: 282px;
+    }
+    .title {
+        font-size: 14px !important;
+    }
+    .description {
+        font-size: 14px !important;
+        width: 255px;
+    }
+    .job-board-image {
+        width: 252px;
+    }
+    .latest-candidate {
+        font-size: 16px !important;
+    }
+    .candidate-table th, .candidate-table td {
+        padding: 8px;
+    }
+    .table-chart {
+        padding: 0;
+        margin-right: 46px;
+    }
+    .table-chart.bar-graph {
+        width: 456px;
+    }
 }
